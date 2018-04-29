@@ -12,6 +12,9 @@
 		ADCE02EF20963ED000F56A99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADCE02ED20963ED000F56A99 /* Main.storyboard */; };
 		ADCE02F120963ED000F56A99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADCE02F020963ED000F56A99 /* Assets.xcassets */; };
 		ADCE02F420963ED000F56A99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADCE02F220963ED000F56A99 /* LaunchScreen.storyboard */; };
+		ADCE02FC2096421800F56A99 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCE02FB2096421800F56A99 /* Answer.swift */; };
+		ADCE02FE2096469600F56A99 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCE02FD2096469600F56A99 /* Question.swift */; };
+		ADCE03002096473000F56A99 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCE02FF2096473000F56A99 /* Quiz.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		ADCE02F020963ED000F56A99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADCE02F320963ED000F56A99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ADCE02F520963ED000F56A99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADCE02FB2096421800F56A99 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		ADCE02FD2096469600F56A99 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		ADCE02FF2096473000F56A99 /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +44,9 @@
 		ADCE02DD20963ED000F56A99 = {
 			isa = PBXGroup;
 			children = (
+				ADCE02FB2096421800F56A99 /* Answer.swift */,
+				ADCE02FD2096469600F56A99 /* Question.swift */,
+				ADCE02FF2096473000F56A99 /* Quiz.swift */,
 				ADCE02E820963ED000F56A99 /* qUiX */,
 				ADCE02E720963ED000F56A99 /* Products */,
 			);
@@ -136,6 +145,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADCE02FC2096421800F56A99 /* Answer.swift in Sources */,
+				ADCE03002096473000F56A99 /* Quiz.swift in Sources */,
+				ADCE02FE2096469600F56A99 /* Question.swift in Sources */,
 				ADCE02EC20963ED000F56A99 /* ViewController.swift in Sources */,
 				ADCE02EA20963ED000F56A99 /* AppDelegate.swift in Sources */,
 			);
