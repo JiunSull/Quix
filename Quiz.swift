@@ -15,8 +15,32 @@ class Quiz {
     var score: Int
     var currentQuestionIndex: Int
     
-    init() {
-        
+    var currentQuestionNumber: Int {
+        return currentQuestionIndex + 1
     }
+    
+    var currentQuestion: Question {
+        return questions[currentQuestionIndex]
+    }
+    
+    init(questions: [Question]) {
+        self.questions = questions
+        score = 0
+        currentQuestionIndex = 0
+    }
+    
+    func reset() {
+        score = 0
+        currentQuestionIndex = 0
+    }
+    
+    func next() {
+        currentQuestionIndex += 1
+    }
+    
+    func increaseScore() {
+        score += 1
+    }
+    
 }
 

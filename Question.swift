@@ -12,4 +12,9 @@ import Foundation
 struct Question {
     var text: String
     var answers: [Answer]
+    
+    func check(index: Int) -> Bool {
+        return answers [index].isCorrect
+    }
+    
 }
