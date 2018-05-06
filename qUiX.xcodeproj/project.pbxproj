@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		ADCE02EA20963ED000F56A99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCE02E920963ED000F56A99 /* AppDelegate.swift */; };
-		ADCE02EC20963ED000F56A99 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCE02EB20963ED000F56A99 /* ViewController.swift */; };
 		ADCE02EF20963ED000F56A99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADCE02ED20963ED000F56A99 /* Main.storyboard */; };
 		ADCE02F120963ED000F56A99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADCE02F020963ED000F56A99 /* Assets.xcassets */; };
 		ADCE02F420963ED000F56A99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADCE02F220963ED000F56A99 /* LaunchScreen.storyboard */; };
@@ -20,7 +19,6 @@
 /* Begin PBXFileReference section */
 		ADCE02E620963ED000F56A99 /* qUiX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qUiX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADCE02E920963ED000F56A99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ADCE02EB20963ED000F56A99 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ADCE02EE20963ED000F56A99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ADCE02F020963ED000F56A99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADCE02F320963ED000F56A99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -64,7 +62,6 @@
 			isa = PBXGroup;
 			children = (
 				ADCE02E920963ED000F56A99 /* AppDelegate.swift */,
-				ADCE02EB20963ED000F56A99 /* ViewController.swift */,
 				ADCE02ED20963ED000F56A99 /* Main.storyboard */,
 				ADCE02F020963ED000F56A99 /* Assets.xcassets */,
 				ADCE02F220963ED000F56A99 /* LaunchScreen.storyboard */,
@@ -148,7 +145,6 @@
 				ADCE02FC2096421800F56A99 /* Answer.swift in Sources */,
 				ADCE03002096473000F56A99 /* Quiz.swift in Sources */,
 				ADCE02FE2096469600F56A99 /* Question.swift in Sources */,
-				ADCE02EC20963ED000F56A99 /* ViewController.swift in Sources */,
 				ADCE02EA20963ED000F56A99 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
