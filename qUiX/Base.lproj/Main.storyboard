@@ -22,6 +22,9 @@
                                 <rect key="frame" x="40" y="156.5" width="240" height="55"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="36"/>
                                 <state key="normal" title="S†4®† Nø0øW"/>
+                                <connections>
+                                    <segue destination="iMC-MC-sEU" kind="show" id="Zno-Oy-b9h"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -39,50 +42,78 @@
         <!--Qu1z-->
         <scene sceneID="lLx-9C-KhJ">
             <objects>
-                <viewController title="Qu1z" id="iMC-MC-sEU" sceneMemberID="viewController">
+                <viewController title="Qu1z" id="iMC-MC-sEU" customClass="QuizViewController" customModule="qUiX" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1d6-V1-a2Z">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="When did the Iphone X release" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IiM-i3-Goj">
-                                <rect key="frame" x="43" y="63" width="235" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="clr-E1-cZz">
+                                <rect key="frame" x="32" y="368" width="256" height="168"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5tE-1f-aM3">
+                                        <rect key="frame" x="0.0" y="0.0" width="122" height="30"/>
+                                        <state key="normal" title="November 3 2017">
+                                            <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="check:" destination="iMC-MC-sEU" eventType="touchUpInside" id="OKy-yP-uQH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OcS-rS-1Pp">
+                                        <rect key="frame" x="0.0" y="46" width="130" height="30"/>
+                                        <state key="normal" title="November 20 2017">
+                                            <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="check:" destination="iMC-MC-sEU" eventType="touchUpInside" id="liT-CM-875"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MHd-8u-hKe">
+                                        <rect key="frame" x="0.0" y="92" width="113" height="30"/>
+                                        <state key="normal" title="October 12 2017">
+                                            <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="check:" destination="iMC-MC-sEU" eventType="touchUpInside" id="Ge0-gl-gZw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pps-XF-xUc">
+                                        <rect key="frame" x="0.0" y="138" width="243" height="30"/>
+                                        <state key="normal" title="I don't want to answer this question">
+                                            <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="check:" destination="iMC-MC-sEU" eventType="touchUpInside" id="KH4-zu-CdY"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="When did the Iphone X release" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IiM-i3-Goj">
+                                <rect key="frame" x="32" y="52" width="256" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.15821282840315229" green="0.29657641292232956" blue="0.73328442258883242" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5tE-1f-aM3">
-                                <rect key="frame" x="43" y="174" width="122" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="November 3 2017">
-                                    <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OcS-rS-1Pp">
-                                <rect key="frame" x="43" y="234" width="130" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="November 20 2017">
-                                    <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MHd-8u-hKe">
-                                <rect key="frame" x="43" y="304" width="113" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="October 12 2017">
-                                    <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pps-XF-xUc">
-                                <rect key="frame" x="43" y="375" width="243" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="I don't want to answer this question">
-                                    <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="IiM-i3-Goj" firstAttribute="top" secondItem="1kA-Ov-hgG" secondAttribute="top" constant="32" id="L57-8j-ag2"/>
+                            <constraint firstItem="1kA-Ov-hgG" firstAttribute="trailing" secondItem="IiM-i3-Goj" secondAttribute="trailing" constant="32" id="WJv-ni-AkM"/>
+                            <constraint firstItem="IiM-i3-Goj" firstAttribute="leading" secondItem="1kA-Ov-hgG" secondAttribute="leading" constant="32" id="bm6-nx-LaR"/>
+                            <constraint firstItem="1kA-Ov-hgG" firstAttribute="bottom" secondItem="clr-E1-cZz" secondAttribute="bottom" constant="32" id="cBe-3V-kse"/>
+                            <constraint firstItem="clr-E1-cZz" firstAttribute="leading" secondItem="1kA-Ov-hgG" secondAttribute="leading" constant="32" id="koY-cA-zPn"/>
+                            <constraint firstItem="1kA-Ov-hgG" firstAttribute="trailing" secondItem="clr-E1-cZz" secondAttribute="trailing" constant="32" id="tCJ-wA-WA9"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="1kA-Ov-hgG"/>
                     </view>
+                    <connections>
+                        <outlet property="answerButton0" destination="5tE-1f-aM3" id="Vph-Tc-OIF"/>
+                        <outlet property="answerButton1" destination="OcS-rS-1Pp" id="6Uw-c7-1ax"/>
+                        <outlet property="answerButton2" destination="MHd-8u-hKe" id="OhR-vA-XPt"/>
+                        <outlet property="answerButton3" destination="Pps-XF-xUc" id="DMq-co-oam"/>
+                        <outlet property="questionLabel" destination="IiM-i3-Goj" id="M1u-Af-OXK"/>
+                        <segue destination="rEv-ro-bTj" kind="presentation" modalTransitionStyle="flipHorizontal" id="3hV-SP-sWP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GWA-Og-0cK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -95,7 +126,25 @@
                     <view key="view" contentMode="scaleToFill" id="AYi-8V-t3C">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Got 0/10 Correct" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UYI-R1-eAG">
+                                <rect key="frame" x="40" y="60" width="240" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0019534072127627053" green="0.19816782994923854" blue="0.0490801762385525" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A0w-t5-Cxf">
+                                <rect key="frame" x="135" y="181" width="50" height="30"/>
+                                <state key="normal" title="Restart"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="b42-wH-f9d" firstAttribute="trailing" secondItem="UYI-R1-eAG" secondAttribute="trailing" constant="40" id="3OZ-yP-8Vl"/>
+                            <constraint firstItem="UYI-R1-eAG" firstAttribute="top" secondItem="b42-wH-f9d" secondAttribute="top" constant="40" id="7SK-8l-Hqi"/>
+                            <constraint firstItem="UYI-R1-eAG" firstAttribute="leading" secondItem="b42-wH-f9d" secondAttribute="leading" constant="40" id="Nit-j9-xqp"/>
+                            <constraint firstItem="A0w-t5-Cxf" firstAttribute="top" secondItem="UYI-R1-eAG" secondAttribute="bottom" constant="100" id="Sbi-sg-31a"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="b42-wH-f9d"/>
                     </view>
                 </viewController>

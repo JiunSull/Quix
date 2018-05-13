@@ -14,6 +14,7 @@
 		ADCE02FC2096421800F56A99 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCE02FB2096421800F56A99 /* Answer.swift */; };
 		ADCE02FE2096469600F56A99 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCE02FD2096469600F56A99 /* Question.swift */; };
 		ADCE03002096473000F56A99 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCE02FF2096473000F56A99 /* Quiz.swift */; };
+		ADEB634520A8B25400F7A4F7 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEB634420A8B25400F7A4F7 /* QuizViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		ADCE02FB2096421800F56A99 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		ADCE02FD2096469600F56A99 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		ADCE02FF2096473000F56A99 /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
+		ADEB634420A8B25400F7A4F7 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,9 +44,6 @@
 		ADCE02DD20963ED000F56A99 = {
 			isa = PBXGroup;
 			children = (
-				ADCE02FB2096421800F56A99 /* Answer.swift */,
-				ADCE02FD2096469600F56A99 /* Question.swift */,
-				ADCE02FF2096473000F56A99 /* Quiz.swift */,
 				ADCE02E820963ED000F56A99 /* qUiX */,
 				ADCE02E720963ED000F56A99 /* Products */,
 			);
@@ -61,10 +60,14 @@
 		ADCE02E820963ED000F56A99 /* qUiX */ = {
 			isa = PBXGroup;
 			children = (
+				ADCE02FB2096421800F56A99 /* Answer.swift */,
+				ADCE02FD2096469600F56A99 /* Question.swift */,
+				ADCE02FF2096473000F56A99 /* Quiz.swift */,
 				ADCE02E920963ED000F56A99 /* AppDelegate.swift */,
 				ADCE02ED20963ED000F56A99 /* Main.storyboard */,
 				ADCE02F020963ED000F56A99 /* Assets.xcassets */,
 				ADCE02F220963ED000F56A99 /* LaunchScreen.storyboard */,
+				ADEB634420A8B25400F7A4F7 /* QuizViewController.swift */,
 				ADCE02F520963ED000F56A99 /* Info.plist */,
 			);
 			path = qUiX;
@@ -143,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADCE02FC2096421800F56A99 /* Answer.swift in Sources */,
+				ADEB634520A8B25400F7A4F7 /* QuizViewController.swift in Sources */,
 				ADCE03002096473000F56A99 /* Quiz.swift in Sources */,
 				ADCE02FE2096469600F56A99 /* Question.swift in Sources */,
 				ADCE02EA20963ED000F56A99 /* AppDelegate.swift in Sources */,
