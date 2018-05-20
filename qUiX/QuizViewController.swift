@@ -69,7 +69,7 @@ class QuizViewController: UIViewController {
         Question(text: "B hasn't been answered yet", answers: [
             Answer(text: "No",  isCorrect: false),
             Answer(text: "It has been",  isCorrect: true),
-            Answer(text: "Yes",  isCorrect: true),
+            Answer(text: "Yes",  isCorrect: false),
             Answer(text: "I can't tell", isCorrect: false)
         ]),
         Question(text: "The last question", answers: [
@@ -96,7 +96,23 @@ class QuizViewController: UIViewController {
     }
     
     @IBAction func check(_ sender: UIButton) {
-        print(quiz.currentQuestion.check(index: sender.tag))
+        
+        
+        let isCorrect = quiz.currentQuestion.check(index: sender.tag)
+        
+        
+        if isCorrect {
+            quiz.increaseScore() 
+        }
+        
+        if quiz.currentQuestionNumber < quiz.questions.count {
+            quiz.next()
+            show(question: quiz.currentQuestion)
+        }
+        else {
+            print("OUT OF QUESTIONS")
+        }
+        
     }
     
     
